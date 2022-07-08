@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\pagestyle{empty}
+\newcommand{\di}{i}  
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{mathtools}
+\usepackage{amssymb}
+
+\begin{document}
+\Large \begin{center}\textbf{Power Series}\end{center}
+\begin{minipage}{0.5\textwidth}
+\begin{align*}
+\sin(x)&=\sum^\infty_{n=0}\frac{(-1)^{n}x^{2n+1}}{(2n+1)!}:\mathbb{R} \\[20pt]
+\cos(x)&=\sum^\infty_{n=0}\frac{(-1)^{n}x^{2n}}{(2n)!}:\mathbb{R}\\[20pt]
+\sinh(x)&=\sum^\infty_{n=0}\frac{x^{2n+1}}{(2n+1)!}:\mathbb{R}\\[20pt]
+\cosh(x)&=\sum^\infty_{n=0}\frac{x^{2n}}{(2n)!}:\mathbb{R}\\[20pt]
+\tan^{-1}(x)&=\sum^\infty_{n=0}\frac{(-1)^{n}x^{2n+1}}{2n+1}:|x|<1\\[20pt]
+e^x&=\sum^\infty_{n=0}\frac{x^n}{n!}:\mathbb{R}\\[20pt]
+\end{align*}
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\textwidth}
+\begin{align*}
+\frac{1}{1-x}&=\sum^\infty_{n=0}x^n:|x|<1\\[20pt]
+\frac{1}{1+x}&=\sum^\infty_{n=0}(-1)^{n}x^n:|x|<1\\[20pt]
+\ln(x)=\sum^\infty_{n=1}&\frac{(-1)^{n}(x-1)^n}{n}:|1-x|<1\\[20pt]
+\ln(1+x)&=\sum^\infty_{n=1}\frac{(-1)^{n+1}x^n}{n}:|x|<1\\[20pt]
+\ln(1-x)&=-\sum^\infty_{n=1}\frac{x^n}{n}:|x|<1\\[20pt]
+\ln(\frac{1+x}{1-x})&=2\sum^\infty_{n=0}\frac{x^{2n+1}}{2n+1}:|x^2|<1\\[20pt]
+\end{align*}
+\end{minipage}
+
+\end{document}
